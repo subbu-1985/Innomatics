@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Phases</title>
+    <style>
+
+   .moon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:140px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transform: rotate(var(--angle, 0deg)) translate(460px) translate(-50%, -50%);
+    transform-origin: center center;
+}
+   .moon > div{
+    transform: rotate(var(--reverse-angle, 0deg)) !important;
+    margin:0 auto 12px;
+}
+   .moon p{
+    transform: rotate(var(--reverse-angle, 0deg));
+}
+   .moon p{
+    color:red;
+    margin-top:0;
+    text-align:center;
+    white-space:nowrap;
+    width:140px;
+    font-size:14px;
+    font-family:Arial, sans-serif;
+}
+    .box1{
+    min-height:1080px;
+    width:100%;
+    background-color:black;
+    padding:20px;
+    }
+    .moon-container{
+    position:relative;
+    width:1080px;
+    height:1080px;
+    margin:0 auto;
+}
+    #box2, #box3, #box4, #box5, #box6, #box7, #box8, #box9,
+    #box10, #box11, #box12, #box13, #box14, #box15, #box16 {
+      transform: none !important;
+      margin: 0 auto;
+    }
+    .moon:nth-child(1){ --angle: -90deg; --reverse-angle: 90deg; }
+    .moon:nth-child(2){ --angle: -67.5deg; --reverse-angle: 67.5deg; }
+    .moon:nth-child(3){ --angle: -45deg; --reverse-angle: 45deg; }
+    .moon:nth-child(4){ --angle: -22.5deg; --reverse-angle: 22.5deg; }
+    .moon:nth-child(5){ --angle: 0deg; --reverse-angle: 0deg; }
+    .moon:nth-child(6){ --angle: 22.5deg; --reverse-angle: -22.5deg; }
+    .moon:nth-child(7){ --angle: 45deg; --reverse-angle: -45deg; }
+    .moon:nth-child(8){ --angle: 67.5deg; --reverse-angle: -67.5deg; }
+    .moon:nth-child(9){ --angle: 90deg; --reverse-angle: -90deg; }
+    .moon:nth-child(10){ --angle: 112.5deg; --reverse-angle: -112.5deg; }
+    .moon:nth-child(11){ --angle: 135deg; --reverse-angle: -135deg; }
+    .moon:nth-child(12){ --angle: 157.5deg; --reverse-angle: -157.5deg; }
+    .moon:nth-child(13){ --angle: 180deg; --reverse-angle: -180deg; }
+    .moon:nth-child(14){ --angle: 202.5deg; --reverse-angle: -202.5deg; }
+    .moon:nth-child(15){ --angle: 225deg; --reverse-angle: -225deg; }
+    .moon:nth-child(16){ --angle: 247.5deg; --reverse-angle: -247.5deg; }
+    .head{
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    margin-bottom:50px;
+    }
+      #box2 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        box-shadow: 3px 3px 3px 3px white;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+      #box3 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+       #box4 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: black;
+        box-shadow: 10px 10px 3px 3px white;
+        display:block;
+       transform: translate(-35px, -50px);
+      }
+       #box5 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 12px 12px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+       #box6 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 14px 14px 5px 5px white;
+        background-color: black;
+        display:block;
+       transform: translate(-35px, -50px);
+      }
+       #box7 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 17px 17px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+       #box8 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 20px 20px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+       #box9 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 23px 23px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+       #box10 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 25px 25px 5px 5px white;
+        background-color: black;
+        display:block;
+       transform: translate(-35px, -50px);
+      }
+       #box11 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 27px 27px 5px 5px white;
+        background-color: black;
+        display:block;
+      transform: translate(-35px, -50px);
+      }
+       #box12 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 30px 30px 5px 5px white;
+        background-color: black;
+        display:block;
+      transform: translate(-35px, -50px);
+      }
+       #box13 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 33px 33px 5px 5px white;
+        background-color: black;
+        display:block;
+       transform: translate(-35px, -50px);
+      }
+       
+      #box14 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 35px 35px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+        
+      }
+       #box15 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 40px 40px 5px 5px white;
+        background-color: black;
+        display:block;
+        transform: translate(-35px, -50px);
+      }
+      #box16 {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    box-shadow:80px 80px 0px 8px white;
+    background-color:black;
+    display:block;
+    margin-bottom:20px;
+    transform: translate(-80px, -80px);
+}
+    </style>
+  <style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
+  <body>
+    
+    <div class="box1">
+        <h1 class="head">Moon Phases</h1>
+      <div class="moon-container">
+
+        <div class="moon">
+    <div id="box2" ></div>
+    <p color="red">🌑 New Moon</p>
+</div>
+
+<div class="moon">
+    <div id="box3"></div>
+    <p>🌒 Crescent I</p>
+</div>
+
+<div class="moon">
+    <div id="box4"></div>
+    <p>🌒 Crescent II</p>
+</div>
+
+<div class="moon">
+    <div id="box5"></div>
+    <p>🌒 Crescent III</p>
+</div>
+
+<div class="moon">
+    <div id="box6"></div>
+    <p>🌒 Crescent IV</p>
+</div>
+
+<div class="moon">
+    <div id="box7"></div>
+    <p>🌓 First Quarter</p>
+</div>
+
+<div class="moon">
+    <div id="box8"></div>
+    <p>🌔 Gibbous I</p>
+</div>
+
+<div class="moon">
+    <div id="box9"></div>
+    <p>🌔 Gibbous II</p>
+</div>
+
+<div class="moon">
+    <div id="box10"></div>
+    <p>🌔 Gibbous III</p>
+</div>
+
+<div class="moon">
+    <div id="box11"></div>
+    <p>🌔 Gibbous IV</p>
+</div>
+
+<div class="moon">
+    <div id="box12"></div>
+    <p>🌔 Gibbous V</p>
+</div>
+
+<div class="moon">
+    <div id="box13"></div>
+    <p>🌔 Gibbous VI</p>
+</div>
+
+<div class="moon">
+    <div id="box14"></div>
+    <p>🌔 Gibbous VII</p>
+</div>
+
+<div class="moon">
+    <div id="box15"></div>
+    <p>🌖 Waning </p>
+</div>
+
+<div class="moon">
+    <div id="box16"></div>
+    <p>🌕 Full Moon</p>
+</div>
+   </div> <!-- moon-container -->
+</div> <!-- box1 -->
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
